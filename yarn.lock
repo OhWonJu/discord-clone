@@ -847,6 +847,35 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
+"@uploadthing/dropzone@0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@uploadthing/dropzone/-/dropzone-0.3.1.tgz#ca2d308033a2a58dbb58fd1e14c1f2cf26f6709c"
+  integrity sha512-SbDoRz8t/m8VtB+vRelduApWwfNZayMvLOn+Q4A8gSIrRAEPDur+s8uPf9On/+I0bGj2Ez/UDoDx3E3UGujT2g==
+  dependencies:
+    file-selector "^0.6.0"
+
+"@uploadthing/mime-types@0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@uploadthing/mime-types/-/mime-types-0.2.7.tgz#f4d5d7a0faa5afd4bc16fcac1e61c80e6487b638"
+  integrity sha512-HfQpL1GSyLOOnIT4WqVv8aW3HotEpFKuuCnK+dUZThMzeiFs09s9J0wk5/VBwupXvIXQwMiB//bp9aUE2p/mFg==
+
+"@uploadthing/react@^6.4.4":
+  version "6.4.4"
+  resolved "https://registry.yarnpkg.com/@uploadthing/react/-/react-6.4.4.tgz#f97deb34098e7817b08b05d5dcbcd0b698fb905a"
+  integrity sha512-/sE1BbtMNhL9YuIppI2eieMdvjWBCtP+zxjtwGD13kpTJcW7E8GytWTQcdXamURVHUgFH2n1Gsfxf0OWC9rdhA==
+  dependencies:
+    "@uploadthing/dropzone" "0.3.1"
+    "@uploadthing/shared" "6.6.0"
+    file-selector "^0.6.0"
+    tailwind-merge "^2.2.1"
+
+"@uploadthing/shared@6.6.0":
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@uploadthing/shared/-/shared-6.6.0.tgz#41fa59381d64553ffd6935e814969f45d75c5110"
+  integrity sha512-3mERSbD9/i83dF4rK6M/K3zcPo70mfo33VvrTE4U2Tf2HS8vjUvu8BmJjNZkZOSIoXenEnKmCxDf9vNPsdO65w==
+  dependencies:
+    std-env "^3.7.0"
+
 acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
@@ -1220,6 +1249,11 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
+
+consola@^3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/consola/-/consola-3.2.3.tgz#0741857aa88cfa0d6fd53f1cff0375136e98502f"
+  integrity sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ==
 
 cookie@0.5.0:
   version "0.5.0"
@@ -1769,6 +1803,13 @@ file-entry-cache@^6.0.1:
   integrity sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==
   dependencies:
     flat-cache "^3.0.4"
+
+file-selector@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/file-selector/-/file-selector-0.6.0.tgz#fa0a8d9007b829504db4d07dd4de0310b65287dc"
+  integrity sha512-QlZ5yJC0VxHxQQsQhXvBaC7VRJ2uaxTf+Tfpu4Z/OcVQJVpZO+DGU0rkoVW5ce2SccxugvpBJoMvUs59iILYdw==
+  dependencies:
+    tslib "^2.4.0"
 
 fill-range@^7.0.1:
   version "7.0.1"
@@ -3109,6 +3150,11 @@ source-map-js@^1.0.2, source-map-js@^1.2.0:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.0.tgz#16b809c162517b5b8c3e7dcd315a2a5c2612b2af"
   integrity sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==
 
+std-env@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.7.0.tgz#c9f7386ced6ecf13360b6c6c55b8aaa4ef7481d2"
+  integrity sha512-JPbdCEQLj1w5GilpiHAx3qJvFndqybBysA3qUOnznweH4QbNYUsW/ea8QzSrnh0vNsezMMw5bcVool8lM0gwzg==
+
 streamsearch@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/streamsearch/-/streamsearch-1.1.0.tgz#404dd1e2247ca94af554e841a8ef0eaa238da764"
@@ -3257,7 +3303,7 @@ swr@2.2.0:
   dependencies:
     use-sync-external-store "^1.2.0"
 
-tailwind-merge@^2.2.2:
+tailwind-merge@^2.2.1, tailwind-merge@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/tailwind-merge/-/tailwind-merge-2.2.2.tgz#87341e7604f0e20499939e152cd2841f41f7a3df"
   integrity sha512-tWANXsnmJzgw6mQ07nE3aCDkCK4QdT3ThPMCzawoYA2Pws7vSTCvz3Vrjg61jVUGfFZPJzxEP+NimbcW+EdaDw==
@@ -3457,6 +3503,16 @@ undici-types@~5.26.4:
   version "5.26.5"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
   integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
+
+uploadthing@^6.9.0:
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/uploadthing/-/uploadthing-6.9.0.tgz#11b2ca74abf8dea21894c237676195181a2ddc94"
+  integrity sha512-I985NeMkUHFK+ixfu6ztBGCzkAVYiLP8H3bIcYz+Oh13uFsqQAKrrG34ivdUk8mCjssGCOn8eN+skMPA6bNCoQ==
+  dependencies:
+    "@uploadthing/mime-types" "0.2.7"
+    "@uploadthing/shared" "6.6.0"
+    consola "^3.2.3"
+    std-env "^3.7.0"
 
 uri-js@^4.2.2:
   version "4.4.1"
