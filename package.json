@@ -33,7 +33,8 @@
     "tailwindcss-animate": "^1.0.7",
     "uploadthing": "^6.9.0",
     "uuid": "^9.0.1",
-    "zod": "^3.22.5"
+    "zod": "^3.22.5",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",
