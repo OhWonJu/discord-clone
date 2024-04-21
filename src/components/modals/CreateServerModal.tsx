@@ -1,10 +1,12 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { useRouter } from "next/navigation";
+
+import { useModal } from "@/hooks/useModalStore";
 
 import {
   Dialog,
@@ -26,26 +28,18 @@ import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 
 import FileUpload from "../FileUpload";
-import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   name: z.string().min(1, { message: "Server name is required." }),
   imageUrl: z.string().min(1, { message: "Server image is required" }),
 });
 
-/**
- * 최초 사용자, 어떠한 서버에도 포함되어 있는 사용자에 한하여 보여지는 모달이므로
- * 상태관리를 통해 해당 모달을 컨트롤하지 않음.
- */
-const InitialModal = () => {
-  // 하이드레이션 이슈 해결 트릭
-  const [isMounted, setIsMounted] = useState(false);
-
+const CreateServerModal = () => {
   const router = useRouter();
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  const { isOpen, onClose, type } = useModal();
+
+  const isModalOpen = isOpen && type === "createServer";
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -63,16 +57,19 @@ const InitialModal = () => {
 
       form.reset();
       router.refresh();
-      window.location.reload();
+      onClose();
     } catch (error) {
       console.log(error);
     }
   };
 
-  if (!isMounted) return null;
+  const handleClose = () => {
+    form.reset();
+    onClose();
+  };
 
   return (
-    <Dialog open>
+    <Dialog open={isModalOpen} onOpenChange={handleClose}>
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
@@ -136,4 +133,4 @@ const InitialModal = () => {
   );
 };
 
-export default InitialModal;
+export default CreateServerModal;
