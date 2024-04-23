@@ -5,8 +5,10 @@ import React, { useEffect, useState } from "react";
 import {
   CreateChannelModal,
   CreateServerModal,
+  DeleteServerModal,
   EditServerModal,
   InviteModal,
+  LeaveServerModal,
   MembersModal,
 } from "../modals";
 
@@ -29,6 +31,8 @@ const ModalProvider = () => {
       <CreateServerModal />
       <EditServerModal />
       <CreateChannelModal />
+      <LeaveServerModal />
+      <DeleteServerModal />
       <InviteModal />
       <MembersModal />
     </>
