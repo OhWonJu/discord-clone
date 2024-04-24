@@ -29,8 +29,13 @@ const ServerMember = ({ member, server }: ServerMemberProps) => {
   // Icon 이 아닌 이유 -> Map 에서 이미 Compoment 를 내려주고 있음
   const icon = ROLE_ICON_MAP[member.role];
 
+  const onClick = () => {
+    router.push(`/servers/${params?.serverId}/conversations/${member.id}`);
+  };
+
   return (
     <button
+      onClick={onClick}
       className={cn(
         "group px-2 py-2 rouned-md flex items-center gap-x-2 w-full hover:bg-zinc-700/10 dark:hover:bg-zinc-700/50 transition mb-1",
         params?.memberId === member.id && "bg-zinc-700/20 dark:bg-zinc-700"
@@ -43,7 +48,7 @@ const ServerMember = ({ member, server }: ServerMemberProps) => {
       <p
         className={cn(
           "font-semibold text-sm text-zinc-500 group-hover:text-zinc-600 dark:text-zinc-400 dark:group-hover:text-zinc-300 transition",
-          params?.channelId === member.id &&
+          params?.memberId === member.id &&
             "text-primary dark:text-zinc-200 dark:group-hover:text-white"
         )}
       >
