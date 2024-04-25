@@ -41,6 +41,7 @@ const useChatSocket = ({ addKey, updateKey, queryKey }: ChatSocketProps) => {
             }),
           };
         });
+        
         return {
           ...oldData,
           pages: newData,
