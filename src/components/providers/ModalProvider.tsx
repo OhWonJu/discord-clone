@@ -12,6 +12,7 @@ import {
   InviteModal,
   LeaveServerModal,
   MembersModal,
+  MessageFileModal,
 } from "../modals";
 
 const ModalProvider = () => {
@@ -37,6 +38,7 @@ const ModalProvider = () => {
       <DeleteServerModal />
       <DeleteChannelModal />
       <EditChannelModal />
+      <MessageFileModal />
       <InviteModal />
       <MembersModal />
     </>
