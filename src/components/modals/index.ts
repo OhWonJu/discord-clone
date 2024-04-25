@@ -8,3 +8,4 @@ export { default as InitialModal } from "./InitialModal";
 export { default as InviteModal } from "./InviteModal";
 export { default as LeaveServerModal } from "./LeaveServerModal";
 export { default as MembersModal } from "./MembersModal";
+export {default as MessageFileModal} from "./MessageFileModal"
