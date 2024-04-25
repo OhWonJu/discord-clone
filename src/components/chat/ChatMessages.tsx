@@ -5,12 +5,14 @@ import { Member, Message, Profile } from "@prisma/client";
 import { Loader2, ServerCrash } from "lucide-react";
 import { format } from "date-fns";
 
+
 import useChatQuery from "@/hooks/useChatQuery";
 
 import ChatWelcome from "./ChatWelcome";
 import ChatItem from "./ChatItem";
 
 const DATE_FORMAT = "d MMM yyyy, HH:mm";
+
 
 type MessageWithMemberWithProfile = Message & {
   member: Member & {
@@ -100,7 +102,6 @@ const ChatMessages = ({
                 socketUrl={socketUrl}
                 socketQuery={socketQuery}
               />
-            ))}
           </Fragment>
         ))}
       </div>
