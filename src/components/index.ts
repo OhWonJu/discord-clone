@@ -1,4 +1,5 @@
 export { default as ActionTooltip } from "./ActionTooltip";
+export { default as EmojiPicker } from "./EmojiPicker";
 export { default as FileUpload } from "./FileUpload";
 export { default as MobileToggle } from "./MobileToggle";
 export { default as ModeToggle } from "./ModeToggle";
