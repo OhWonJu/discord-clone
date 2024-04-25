@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 
 import {
   ModalProvider,
+  QueryProvider,
   SocketProvider,
   ThemeProvider,
 } from "@/components/providers";
@@ -37,7 +38,7 @@ export default function RootLayout({
           >
             <SocketProvider>
               <ModalProvider />
-              {children}
+              <QueryProvider>{children}</QueryProvider>
             </SocketProvider>
           </ThemeProvider>
         </body>
