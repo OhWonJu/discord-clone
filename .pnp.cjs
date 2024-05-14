@@ -48,6 +48,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.3.2"],\
           ["@types/react-dom", "npm:18.3.0"],\
           ["@types/uuid", "npm:9.0.8"],\
+          ["@uploadthing/mime-types", "npm:0.2.10"],\
           ["@uploadthing/react", "virtual:78bf780b3b338e787eae5a919ab83657e63486ab3d830b886a872e64395665861f974e94fa79f254c0df53d77839d47892a6f76f274d9fecae0d1737096b032f#npm:6.5.4"],\
           ["@yarnpkg/pnpify", "npm:4.1.0"],\
           ["axios", "npm:1.6.8"],\
@@ -3856,6 +3857,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.3.2"],\
           ["@types/react-dom", "npm:18.3.0"],\
           ["@types/uuid", "npm:9.0.8"],\
+          ["@uploadthing/mime-types", "npm:0.2.10"],\
           ["@uploadthing/react", "virtual:78bf780b3b338e787eae5a919ab83657e63486ab3d830b886a872e64395665861f974e94fa79f254c0df53d77839d47892a6f76f274d9fecae0d1737096b032f#npm:6.5.4"],\
           ["@yarnpkg/pnpify", "npm:4.1.0"],\
           ["axios", "npm:1.6.8"],\

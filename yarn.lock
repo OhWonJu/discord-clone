@@ -1798,7 +1798,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uploadthing/mime-types@npm:0.2.10":
+"@uploadthing/mime-types@npm:0.2.10, @uploadthing/mime-types@npm:^0.2.10":
   version: 0.2.10
   resolution: "@uploadthing/mime-types@npm:0.2.10"
   checksum: 10c0/f03b848cddec7977e391557d0713a8666c7daaabedd8259b712a9685cd9d905b17239abe0504f45b5e95d947d180cf595172b41c92b1d685f61559cae62e8d8d
@@ -2900,6 +2900,7 @@ __metadata:
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
     "@types/uuid": "npm:^9.0.8"
+    "@uploadthing/mime-types": "npm:^0.2.10"
     "@uploadthing/react": "npm:^6.4.4"
     "@yarnpkg/pnpify": "npm:^4.1.0"
     axios: "npm:^1.6.8"
