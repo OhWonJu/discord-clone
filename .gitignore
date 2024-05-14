@@ -42,4 +42,5 @@ next-env.d.ts
 MEMO.md
 
 # pirsma build files
-prisma/client/*
+prisma/*
+!prisma/schema.prisma
