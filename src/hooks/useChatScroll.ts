@@ -55,7 +55,6 @@ const useChatScroll = ({
     };
 
     if (shouldAutoScroll()) {
-      console.log("SCROLL TO");
       setTimeout(() => {
         bottomRef.current?.scrollIntoView({ behavior: "smooth" }), 100;
       });
