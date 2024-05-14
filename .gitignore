@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+.yarn
 
 # testing
 /coverage
@@ -38,3 +39,6 @@ next-env.d.ts
 
 .git-commit-template
 MEMO.md
+
+# pirsma build files
+prisma/client/*
