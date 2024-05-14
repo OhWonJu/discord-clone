@@ -59,6 +59,7 @@ const RAW_RUNTIME_STATE =
           ["emoji-mart", "npm:5.6.0"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-next", "virtual:78bf780b3b338e787eae5a919ab83657e63486ab3d830b886a872e64395665861f974e94fa79f254c0df53d77839d47892a6f76f274d9fecae0d1737096b032f#npm:14.2.1"],\
+          ["livekit-client", "npm:2.1.3"],\
           ["livekit-server-sdk", "npm:2.3.0"],\
           ["lucide-react", "virtual:78bf780b3b338e787eae5a919ab83657e63486ab3d830b886a872e64395665861f974e94fa79f254c0df53d77839d47892a6f76f274d9fecae0d1737096b032f#npm:0.368.0"],\
           ["next", "virtual:78bf780b3b338e787eae5a919ab83657e63486ab3d830b886a872e64395665861f974e94fa79f254c0df53d77839d47892a6f76f274d9fecae0d1737096b032f#npm:14.2.1"],\
@@ -600,7 +601,7 @@ const RAW_RUNTIME_STATE =
           ["@types/livekit__protocol", null],\
           ["@types/tslib", null],\
           ["email-regex", "npm:5.0.0"],\
-          ["livekit-client", null],\
+          ["livekit-client", "npm:2.1.3"],\
           ["loglevel", "npm:1.9.1"],\
           ["rxjs", "npm:7.8.1"],\
           ["tslib", null]\
@@ -637,7 +638,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "npm:18.3.0"],\
           ["@types/tslib", null],\
           ["clsx", "npm:2.1.0"],\
-          ["livekit-client", null],\
+          ["livekit-client", "npm:2.1.3"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:78bf780b3b338e787eae5a919ab83657e63486ab3d830b886a872e64395665861f974e94fa79f254c0df53d77839d47892a6f76f274d9fecae0d1737096b032f#npm:18.3.1"],\
           ["tslib", null],\
@@ -668,6 +669,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@livekit/protocol", [\
+      ["npm:1.15.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@livekit-protocol-npm-1.15.0-45d319ff99-10c0.zip/node_modules/@livekit/protocol/",\
+        "packageDependencies": [\
+          ["@livekit/protocol", "npm:1.15.0"],\
+          ["@bufbuild/protobuf", "npm:1.9.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:1.16.0", {\
         "packageLocation": "../../../.yarn/berry/cache/@livekit-protocol-npm-1.16.0-05d2d6686d-10c0.zip/node_modules/@livekit/protocol/",\
         "packageDependencies": [\
@@ -3868,6 +3877,7 @@ const RAW_RUNTIME_STATE =
           ["emoji-mart", "npm:5.6.0"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-next", "virtual:78bf780b3b338e787eae5a919ab83657e63486ab3d830b886a872e64395665861f974e94fa79f254c0df53d77839d47892a6f76f274d9fecae0d1737096b032f#npm:14.2.1"],\
+          ["livekit-client", "npm:2.1.3"],\
           ["livekit-server-sdk", "npm:2.3.0"],\
           ["lucide-react", "virtual:78bf780b3b338e787eae5a919ab83657e63486ab3d830b886a872e64395665861f974e94fa79f254c0df53d77839d47892a6f76f274d9fecae0d1737096b032f#npm:0.368.0"],\
           ["next", "virtual:78bf780b3b338e787eae5a919ab83657e63486ab3d830b886a872e64395665861f974e94fa79f254c0df53d77839d47892a6f76f274d9fecae0d1737096b032f#npm:14.2.1"],\
@@ -4646,6 +4656,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/esutils-npm-2.0.3-f865beafd5-10c0.zip/node_modules/esutils/",\
         "packageDependencies": [\
           ["esutils", "npm:2.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["events", [\
+      ["npm:3.3.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/events-npm-3.3.0-c280bc7e48-10c0.zip/node_modules/events/",\
+        "packageDependencies": [\
+          ["events", "npm:3.3.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5856,6 +5875,23 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/lines-and-columns-npm-1.2.4-d6c7cc5799-10c0.zip/node_modules/lines-and-columns/",\
         "packageDependencies": [\
           ["lines-and-columns", "npm:1.2.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["livekit-client", [\
+      ["npm:2.1.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/livekit-client-npm-2.1.3-d980057cfb-10c0.zip/node_modules/livekit-client/",\
+        "packageDependencies": [\
+          ["livekit-client", "npm:2.1.3"],\
+          ["@livekit/protocol", "npm:1.15.0"],\
+          ["events", "npm:3.3.0"],\
+          ["loglevel", "npm:1.9.1"],\
+          ["sdp-transform", "npm:2.14.2"],\
+          ["ts-debounce", "npm:4.0.0"],\
+          ["tslib", "npm:2.6.2"],\
+          ["typed-emitter", "npm:2.1.0"],\
+          ["webrtc-adapter", "npm:8.2.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7365,6 +7401,24 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["sdp", [\
+      ["npm:3.2.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/sdp-npm-3.2.0-b1a5f85233-10c0.zip/node_modules/sdp/",\
+        "packageDependencies": [\
+          ["sdp", "npm:3.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["sdp-transform", [\
+      ["npm:2.14.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/sdp-transform-npm-2.14.2-4267afc9e5-10c0.zip/node_modules/sdp-transform/",\
+        "packageDependencies": [\
+          ["sdp-transform", "npm:2.14.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["semver", [\
       ["npm:6.3.1", {\
         "packageLocation": "../../../.yarn/berry/cache/semver-npm-6.3.1-bcba31fdbe-10c0.zip/node_modules/semver/",\
@@ -8050,6 +8104,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["ts-debounce", [\
+      ["npm:4.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/ts-debounce-npm-4.0.0-59e3ec0db2-10c0.zip/node_modules/ts-debounce/",\
+        "packageDependencies": [\
+          ["ts-debounce", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["ts-interface-checker", [\
       ["npm:0.1.13", {\
         "packageLocation": "../../../.yarn/berry/cache/ts-interface-checker-npm-0.1.13-0c7b064494-10c0.zip/node_modules/ts-interface-checker/",\
@@ -8191,6 +8254,16 @@ const RAW_RUNTIME_STATE =
           ["has-proto", "npm:1.0.3"],\
           ["is-typed-array", "npm:1.1.13"],\
           ["possible-typed-array-names", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["typed-emitter", [\
+      ["npm:2.1.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/typed-emitter-npm-2.1.0-0c02187bf2-10c0.zip/node_modules/typed-emitter/",\
+        "packageDependencies": [\
+          ["typed-emitter", "npm:2.1.0"],\
+          ["rxjs", "npm:7.8.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8463,6 +8536,16 @@ const RAW_RUNTIME_STATE =
           ["asn1js", "npm:3.0.5"],\
           ["pvtsutils", "npm:1.3.5"],\
           ["tslib", "npm:2.6.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["webrtc-adapter", [\
+      ["npm:8.2.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/webrtc-adapter-npm-8.2.3-612f54e47a-10c0.zip/node_modules/webrtc-adapter/",\
+        "packageDependencies": [\
+          ["webrtc-adapter", "npm:8.2.3"],\
+          ["sdp", "npm:3.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
